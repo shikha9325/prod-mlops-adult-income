@@ -1,0 +1,17 @@
+PS C:\Users\STPI\Desktop\SHIKHA_PROJECT> & "C:/Program Files/Python313/python.exe" c:/Users/STPI/Desktop/SHIKHA_PROJECT/Comparision.py
+c:\Users\STPI\Desktop\SHIKHA_PROJECT\Comparision.py:26: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df['TotalCharges'].fillna(df['TotalCharges'].median(), inplace=True)
+
+Churn Prediction Performance Comparison:
+                     Accuracy  Precision    Recall  F1-Score   ROC-AUC
+Model
+Random Forest        0.799858   0.672932  0.478610  0.559375  0.842832
+Logistic Regression  0.798439   0.640625  0.548128  0.590778  0.840277
+Decision Tree        0.784954   0.603499  0.553476  0.577406  0.821742
+XGBoost              0.782825   0.603030  0.532086  0.565341  0.816938
+SVC                  0.795600   0.656934  0.481283  0.555556  0.790759
